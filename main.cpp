@@ -1,5 +1,6 @@
 #include <iostream>
 #include "boat.h"
+#include "sailboat.h"
 
 /*
  * Instructions:
@@ -18,9 +19,9 @@
  */
 
 int main() {
-    Boat boat; // change this
+    Boat boat("Boat",true,32); // change this
     boat.sink();
-    SailBoat sailBoat; // change this
+    SailBoat sailBoat("Sail Boat",64,3); // change this
     sailBoat.sink();
     return 0;
 }

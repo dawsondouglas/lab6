@@ -5,12 +5,18 @@
 #ifndef MIDTERM_REVIEW_KL_SPEEDBOAT_H
 #define MIDTERM_REVIEW_KL_SPEEDBOAT_H
 
+#include "boat.h"
 
-class SailBoat {
-    bool hasMotor;
-    int length;
+class SailBoat : public Boat {
+    int numSails;
+    
+    public:
+    SailBoat();
+    SailBoat(std::string name, int length, int numSails);
 
-
+    int getNumSails() const;
+    void setNumSails(int numSails);
+    void sink() override;
 };
 
 

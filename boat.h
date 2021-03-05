@@ -9,8 +9,20 @@
 
 class Boat {
     std::string name;
-    int numSails;
-    void sink();
+    bool hasMotor;
+    int length;
+
+    public:
+    Boat();
+    Boat(std::string name, bool hasMotor, int length);
+
+    std::string getName() const;
+    void setName(std::string name);
+    bool isHasMotor() const;
+    void setHasMotor(bool hasMotor);
+    int getLength() const;
+    void setLength(int length);
+    virtual void sink();
 };
 
 
