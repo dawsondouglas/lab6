@@ -5,10 +5,6 @@
 #include "boat.h"
 #include <iostream>
 
-std::string name;
-bool hasMotor;
-int length;
-
 Boat::Boat() {}
 
 Boat::Boat(std::string name, bool hasMotor, int length)

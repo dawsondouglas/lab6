@@ -5,8 +5,6 @@
 #include "sailboat.h"
 #include <iostream>
 
-int numSails;
-
 SailBoat::SailBoat()
 {
     setHasMotor(false);
